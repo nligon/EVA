@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > Steve
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  > Your best friend on the web
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Steve is an AI chat application that lets you have conversations with an online bot.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > Many people on the internet are bored and lonely. Steve can help.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > Steve talks to people and alleviates their boredom and loneliness with his conversation.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > "The experience of getting a package in the mail is one of life's most underrated pleasures."
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Just go to chatwithsteve.com and start chatting!
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > "Before Steve, my wife and children were threatening to leave me. Now, Steve helps me forget how lonely I truly am.
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > Steve is here to help you. Just head to chatwithsteve.com to get started.

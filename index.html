@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="app.js"></script>
+
+<body>
+This is the top of the body.
+  <div ng-app="myApp">
+    <div ng-controller="jokes">
+      First Name:
+      <input type="text" ng-model="firstName" placeholder="Cypher">
+      <br> Last Name:
+      <input type="text" ng-model="lastName" placeholder="Hamtrotter">
+      <br>
+      <br> Full Name: {{firstName + " " + lastName}}
+      <br>ng-bind="lastName":
+      <span ng-bind="lastName"></span>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,17 +1,23 @@
-<!DOCTYPE html>
-<html>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<script src="app.js"></script>
+<!-- MODIFYING THIS FILE SHOULD BE UNNECESSARY -->
+<doctype! html>
+  <html>
 
-<body>
-This is the top of the body.
-  <div ng-app="myApp">
-    <div ng-controller="jokes">
-      <br> First Name: <input type="text" ng-model="firstName" placeholder="Cypher">
-      <br> Last Name: <input type="text" ng-model="lastName" placeholder="Hamtrotter"><br>
-      <br> Full Name: {{firstName + " " + lastName}}
+  <head>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="view1/view1.js"></script>
+    <script src="view2/view2.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="talkie">
+      <nav>
+        <a href="#/view1">View1</a>
+        <a href="#/view2">View2</a>
+      </nav>
+      <div ng-view></div>
     </div>
-  </div>
-</body>
+  </body>
 
-</html>
+  </html>

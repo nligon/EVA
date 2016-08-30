@@ -1,0 +1,23 @@
+{
+  "name": "talky",
+  "version": "1.0.0",
+  "description": "A client for chatting with online AI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nligon/2016-07-mvp.git"
+  },
+  "author": "Nathanael Ligon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nligon/2016-07-mvp/issues"
+  },
+  "homepage": "https://github.com/nligon/2016-07-mvp#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}

@@ -8,12 +8,25 @@ angular.module('talkie.view1', [])
     // fetch();
     // $scope.go();
   });
-  
+
   $scope.go = function() {
     console.log('go called');
-    fetch();
+    // fetch();
+    send();
   }
-  
+
+  function send() {
+    console.log('send called.');
+    $http.post('https://api.api.ai/v1/query', {
+      'query': 'hello',
+      'lang': 'en'
+    }).then(function(response) {
+      console.log('response:', response);
+      $scope.details = response.data.result.speech
+    }, function(error) {
+      console.log('error:', error);
+    });
+  }
 
   function fetch() {
     console.log('fetch called. $scope.search:', $scope.search);

@@ -5,18 +5,18 @@ angular.module('talkie.view1', [])
   // $scope.display = 'First view, here.';
 
   $scope.$watch('search', function() {
-    fetch();
+    // fetch();
+    // $scope.go();
   });
+  
+  $scope.go = function() {
+    console.log('go called');
+    fetch();
+  }
+  
 
   function fetch() {
-    $http.get("http://www.omdbapi.com/?t=" + $scope.search + "&tomatoes=true&plot=full")
-      .then(function(response) {
-        $scope.details = response.data;
-        console.log('response:', response.data);
-      });
-  }
-
-  $scope.fetch = function() {
+    console.log('fetch called. $scope.search:', $scope.search);
     $http.get("http://www.omdbapi.com/?t=" + $scope.search + "&tomatoes=true&plot=full")
       .then(function(response) {
         $scope.details = response.data;

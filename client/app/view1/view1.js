@@ -2,7 +2,7 @@
 angular.module('talkie.view1', [])
 
 .controller('view1Ctrl', function($scope, $http) {
-  // $scope.display = 'First view, here.';
+  $scope.display = '';
 
   $scope.$watch('search', function() {
     // fetch();
@@ -12,13 +12,14 @@ angular.module('talkie.view1', [])
   $scope.go = function() {
     console.log('go called');
     // fetch();
-    send();
+    // console.log('text:', $scope.search);
+    send($scope.search);
   }
 
-  function send() {
+  function send(myText) {
     console.log('send called.');
     $http.post('https://api.api.ai/v1/query', {
-      'query': 'hello',
+      'query': myText,
       'lang': 'en'
     }).then(function(response) {
       console.log('response:', response);

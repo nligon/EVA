@@ -1,3 +1,9 @@
 <div ng-controller="view1Ctrl">
-  <h1> {{ display }} </h1>
+  view1
+  <!-- <h1> {{ display }} </h1> -->
+  <!-- <div id="main-info" ng-include="'view1/view1.html'" class="col-md-8"></div> -->
+  <h1> Title: {{details.Title}}</h1>
+  <h2> Year: {{details.Year}}</h2>
+  <h2> Rated: {{details.Rated}}</h2>
+  <img src="{{ details.Poster }}">
 </div>

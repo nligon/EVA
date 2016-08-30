@@ -1,6 +1,6 @@
 angular.module('talkie', [
-    'talkie.view1',
-    'talkie.view2',
+    'talkie.chat',
+    'talkie.about',
     'ngRoute'
   ])
   .config(function($routeProvider, $httpProvider) {
@@ -10,15 +10,15 @@ angular.module('talkie', [
      };
 
     $routeProvider
-      .when('/view1', {
-        templateUrl: 'view1/view1.html',
-        controller: 'view1Ctrl'
+      .when('/chat', {
+        templateUrl: 'chat/chat.html',
+        controller: 'chatCtrl'
       })
-      .when('/view2', {
-        templateUrl: 'view2/view2.html',
-        controller: 'view2Ctrl'
+      .when('/about', {
+        templateUrl: 'about/about.html',
+        controller: 'aboutCtrl'
       })
       .otherwise({
-        redirectTo: '/view1'
+        redirectTo: '/chat'
       });
   })

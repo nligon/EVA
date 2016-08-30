@@ -5,18 +5,18 @@
     <script src="lib/angular.js"></script>
     <script src="lib/angular-route.js"></script>
     <script src="app.js"></script>
-    <script src="view1/view1.js"></script>
-    <script src="view2/view2.js"></script>
+    <script src="chat/chat.js"></script>
+    <script src="about/about.js"></script>
   </head>
 
   <body>
     <div ng-app="talkie">
       <nav>
-<!--         <a href="#/view1">View1</a>
-        <a href="#/view2">View2</a> -->
+<!--         <a href="#/chat">chat</a>
+        <a href="#/about">about</a> -->
       </nav>
 
-      <div ng-controller="view1Ctrl">
+      <div ng-controller="chatCtrl">
         <input type="text" ng-model="search" placeholder="Enter message here" />
         <button ng-click="go()" value="search">Send</button>
         <div ng-view></div>

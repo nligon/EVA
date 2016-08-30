@@ -1,7 +1,7 @@
 // Movie Controller
-angular.module('talkie.view1', [])
+angular.module('talkie.chat', [])
 
-.controller('view1Ctrl', function($scope, $http) {
+.controller('chatCtrl', function($scope, $http) {
   $scope.display = '';
 
   $scope.$watch('search', function() {

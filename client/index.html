@@ -8,20 +8,27 @@
   </head>
 
   <body>
-    <script src="lib/angular.js"></script>
-    <script src="lib/angular-route.js"></script>
-    <script src="app.js"></script>
-    <script src="chat/chat.js"></script>
-    <script src="about/about.js"></script>
-    <nav>
+    <div class="container">
+      <script src="lib/angular.js"></script>
+      <script src="lib/angular-route.js"></script>
+      <script src="app.js"></script>
+      <script src="chat/chat.js"></script>
+      <script src="about/about.js"></script>
+      <nav>
+        <span class="uppertext">
       <a href="#/chat">Chat</a>
       <a href="#/about">About</a>
     </nav>
-    <div ng-controller="chatCtrl">
-      <input type="text" ng-model="search" placeholder="Enter message here" />
-      <button ng-click="go()" value="search">Send</button>
-      <div ng-view></div>
+    </span>
+        <div id="container" class=textarea ng-controller="chatCtrl">
+          <form>
+            <input type="text" ng-model="search" placeholder="Enter message here" />
+            <button ng-click="go()" id="rec" class="btn" value="search">Send</button>
+          </form>
+          <div ng-view></div>
+        </div>
     </div>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </body>
 
   </html>

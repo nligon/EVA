@@ -18,7 +18,7 @@ angular.module('Eva.chat', [])
       'lang': 'en'
     }).then(function(response) {
       console.log('response:', response);
-      $scope.details = response.data.result.speech
+      $scope.details = 'Eva: ' + response.data.result.speech
     }, function(error) {
       console.log('error:', error);
     });

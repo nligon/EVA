@@ -10,16 +10,9 @@ angular.module('talkie.chat', [])
   });
 
   $scope.go = function() {
-    console.log('go called');
-    // fetch();
-    // console.log('text:', $scope.search);
-    send($scope.search);
-  }
-
-  function send(myText) {
     console.log('send called.');
     $http.post('https://api.api.ai/v1/query', {
-      'query': myText,
+      'query': $scope.search,
       'lang': 'en'
     }).then(function(response) {
       console.log('response:', response);
@@ -28,6 +21,22 @@ angular.module('talkie.chat', [])
       console.log('error:', error);
     });
   }
+
+// // express version
+  // $scope.go = function() {
+  //   console.log('send called.');
+  //   $http.post('http://127.0.0.1:3000/#/chat', {
+  //     params: {
+  //       'query': $scope.search,
+  //       'lang': 'en'
+  //     }
+  //   }).then(function(response) {
+  //     console.log('response:', response);
+  //     $scope.details = response.data.result.speech
+  //   }, function(error) {
+  //     console.log('error:', error);
+  //   });
+  // }
 
   function fetch() {
     console.log('fetch called. $scope.search:', $scope.search);

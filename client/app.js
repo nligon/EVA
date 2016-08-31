@@ -1,6 +1,6 @@
-angular.module('talkie', [
-    'talkie.chat',
-    'talkie.about',
+angular.module('Eva', [
+    'Eva.chat',
+    'Eva.about',
     'ngRoute'
   ])
   .config(function($routeProvider, $httpProvider) {

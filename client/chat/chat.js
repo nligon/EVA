@@ -1,5 +1,5 @@
 // Movie Controller
-angular.module('talkie.chat', [])
+angular.module('Eva.chat', [])
 
 .controller('chatCtrl', function($scope, $http) {
   $scope.display = '';
@@ -10,9 +10,11 @@ angular.module('talkie.chat', [])
   });
 
   $scope.go = function() {
+    var message = $scope.search;
+    $scope.search = '';
     console.log('send called.');
     $http.post('https://api.api.ai/v1/query', {
-      'query': $scope.search,
+      'query': message,
       'lang': 'en'
     }).then(function(response) {
       console.log('response:', response);

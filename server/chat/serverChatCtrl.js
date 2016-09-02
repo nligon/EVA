@@ -6,16 +6,17 @@ module.exports = {
       // console.log(obj);
     };
 
-    myFunc(
-      console.log('myFunc launched');
-    )
-    .then(function(message){
-      console.log('post myFunc hit');
-      // res.json(message);
-    })
-    .fail(function (error) {
-      next(error);
-    })
+    // myFunc(
+    //   console.log('myFunc launched');
+    // )
+    // .then(function(message){
+    //   console.log('post myFunc hit');
+    //   // res.json(message);
+    // })
+    // .fail(function (error) {
+    //   next(error);
+    // })
+    
   }
   
 }
